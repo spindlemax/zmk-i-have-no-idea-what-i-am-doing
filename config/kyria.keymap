@@ -10,7 +10,9 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define DEFAULT 0
-#define LOWER 1
+#define LOWER 1 
+#define RGB 2
+#define function 3 
 
 &left_encoder { resolution = <1>;};
 &right_encoder { resolution = <1>;};
@@ -26,25 +28,52 @@
 // | lower |  \  |  Z  |  X   |  C   |  V   |  F2     |   F10   |  |   HOME  |  END    |  B   |  N    |  M    |  ,   |  .    |   /  |
 //                     | GUI  | DEL  | LALT |  LCTRL  |   LSHIFT|  |   RET   |  SPACE  | BSPC | DEL   | R-CTRL|
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp EQUAL &kp Y &kp U  &kp I     &kp O   &kp P 
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp SQT &kp H &kp J  &kp K     &kp L   &kp SEMI 
-	&to 1 &kp Z &kp X &kp C &kp V &kp BSLH &kp F2 &kp F10        &kp HOME &kp END &kp FSLH &kp B &kp N &kp M  &kp COMMA &kp DOT  
-	                 &kp LGUI &kp TAB &kp LSHFT &kp LCTRL &kp LALT        &kp RET  &kp BSPC  &kp SPACE &kp DEL &kp LCTRL
+	&kp ESC     &kp Q    &kp W    &kp E      &kp R     &kp T                                                         &kp EQUAL    &kp Y    &kp U      &kp I     &kp O       &kp P 
+	&to 3     &kp A    &kp S    &kp D      &kp F     &kp G                                                         &kp SQT      &kp H    &kp J      &kp K     &kp L       &kp SEMI 
+	&to 1       &kp Z    &kp X    &kp C      &kp V     &kp BSLH    &kp F2      &kp F10         &kp HOME   &kp END    &kp FSLH     &kp B    &kp N      &kp M     &kp COMMA   &kp DOT  
+	                              &kp LGUI   &kp TAB   &kp LSHFT   &kp LCTRL   &kp LALT        &kp RET    &kp BSPC   &kp SPACE    &kp DEL  &kp LCTRL
 			>;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp LC(LEFT) LC(RIGHT)>;
+			sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT) &inc_dec_kp PG_UP PG_DN >;
 		};
 		
 		lower_layer {
 		
 bindings = <
-        &kp ESC   &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)                                 &kp EQUAL  &kp N7 &kp N8  &kp N9  &kp MINUS &kp LS(N9)
-	&to 0   &kp LEFT &kp UP &kp DOWN &kp RIGHT &rgb_ug RGB_COLOR_HSB(180,100,100)                                            &kp ASTRK  &kp N4 &kp N5  &kp N6  &kp SEMI  &kp LS(N0)
-	&kp LSHFT &kp HOME &kp END &kp PG_UP &kp PG_DN &rgb_ug RGB_COLOR_HSB(280,75,80) &kp F1 &kp F2             &kp F4  &kp F10   &kp FSLH   &kp N1 &kp N2  &kp N3  &kp COMMA   &kp DOT 
-	                 &kp LGUI &kp TAB &kp LSHFT &kp LCTRL &kp LALT                 &kp RET &kp BSPC  &kp SPACE &kp N0 &kp RET
+        &kp ESC      &kp HOME    &kp END     &kp PG_UP   &kp PG_DN    &none                                                            &kp EQUAL    &kp N7   &kp N8    &kp N9    &kp MINUS   &kp LS(N9)
+	&to 0        &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT    &none                                                            &kp ASTRK    &kp N4   &kp N5    &kp N6    &kp SEMI    &kp LS(N0)
+	&kp LSHFT    &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)    &none       &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1   &kp N2    &kp N3    &kp COMMA   &kp DOT 
+	                                     &kp LGUI    &kp TAB      &kp LSHFT   &kp LCTRL   &kp LALT             &kp RET   &kp BSPC  &kp SPACE    &kp N0   &kp RET
 			>;
 			
- sensor-bindings = <&inc_dec_cp LA(LS(TAB)) LA(TAB) &inc_dec_cp LC(Z) LC(Y)>;
+ sensor-bindings = <&inc_dec_kp LC(Z) LC(Y) &inc_dec_cp LA(LS(TAB)) LA(TAB) >;
+
+		
+		};
+
+		RGB_layer
+bindings = <
+      &kp ÉSC    &rgb_ug RGB_TOG     &rgb_ug RGB_COLOR_HSB(280,75,80)   &rgb_ug RGB_COLOR_HSB(60,100,100)      &rgb_ug RGB_COLOR_HSB(150,100,100)   &rgb_ug RGB_COLOR_HSB(180,100,100)                           &rgb_ug RGB_TOG     &rgb_ug RGB_COLOR_HSB(280,75,80)   &rgb_ug RGB_COLOR_HSB(60,100,100)      &rgb_ug RGB_COLOR_HSB(150,100,100)   &rgb_ug RGB_COLOR_HSB(180,100,100)     &none
+      &to 1      &rgb_ug RGB_HUI     &rgb_ug RGB_SAI                    &rgb_ug RGB_BRI                        &rgb_ug RGB_SPI                      &rgb_ug RGB_EFF                                              &rgb_ug RGB_HUI     &rgb_ug RGB_SAI                    &rgb_ug RGB_BRI                        &rgb_ug RGB_SPI                      &rgb_ug RGB_EFF                        &none
+      &to 3      &rgb_ug RGB_HUD     &rgb_ug RGB_SAD                    &rgb_ug RGB_BRD                        &rgb_ug RGB_SPI                      &rgb_ug RGB_EFR  &none    &none    &none &none                     &rgb_ug RGB_HUD     &rgb_ug RGB_SAD                    &rgb_ug RGB_BRD                        &rgb_ug RGB_SPI                      &rgb_ug RGB_EFR                        &none 
+                                     &none                              &none                                  &none                                &none            &none    &none    &none &none                     &none               &none                              &none                                  &none                                &none                                  &none   
+     >;
+			
+ sensor-bindings = <&inc_dec_kp  C_VOL_UP C_VOL_DN  &inc_dec_cp LC(Z) LC(Y)>;
+
+		
+		};		
+		
+		function_layer
+bindings = <
+      &kp ÉSC      &kp F1          &kp F2         &kp F3       &kp F4         &kp F5                                                                              &kp F6        &kp F7          &kp F8         &kp F9          &kp F10        &kp F11 
+      &to 3        &kp N1          &kp N2         &kp N3       &kp N4         &kp N5                                                                              &kp N6        &kp N7          &kp N8         &kp N9          &kp N0         &kp F12 
+      &to 0        &bt BT_SEL 0    &bt BT_NXT     &bt BT_PRV   &bt BT_CLR     &out OUT_TOG   &none           &none                   &none          &none         &kp K_PP      &kp K_NEXT      &kp K_PREV     &kp K_VOL_UP    &kp K_VOL_DN   &kp K_MUTE  &none     &none  
+                                                  &kp CAPS       &kp TAB      &kp LALT       &kp LCTRL       &kp LSHFT               &kp ENTER      &kp SPACE     &kp BSPC      &kp DEL         &kp LCTRL 
+      
+      >;
+			
+ sensor-bindings = <&inc_dec_cp PG_UP PG_DN &inc_dec_cp LC(Z) LC(Y)>;
 
 		
 		};
