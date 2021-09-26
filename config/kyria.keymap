@@ -47,7 +47,7 @@ bindings = <
  sensor-bindings = <&inc_dec_cp LA(LS(TAB)) LA(TAB) &inc_dec_cp LC(Z) LC(Y)>;
 
 		
-		
+		};
 		
 	};
 };
