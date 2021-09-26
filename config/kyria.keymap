@@ -39,7 +39,7 @@
 		
 		lower_layer {
 		
-bindings = <
+                bindings = <
         &kp ESC      &kp HOME    &kp END     &kp PG_UP   &kp PG_DN    &none                                                            &kp EQUAL    &kp N7   &kp N8    &kp N9    &kp MINUS   &kp LS(N9)
 	&to 0        &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT    &none                                                            &kp ASTRK    &kp N4   &kp N5    &kp N6    &kp SEMI    &kp LS(N0)
 	&kp LSHFT    &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)    &none       &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1   &kp N2    &kp N3    &kp COMMA   &kp DOT 
@@ -51,7 +51,7 @@ bindings = <
 		
 		};
 
-		RGB_layer
+		RGB_layer {
 bindings = <
       &kp ESC    &rgb_ug RGB_TOG     &rgb_ug RGB_COLOR_HSB(280,75,80)   &rgb_ug RGB_COLOR_HSB(60,100,100)      &rgb_ug RGB_COLOR_HSB(150,100,100)   &rgb_ug RGB_COLOR_HSB(180,100,100)                           &rgb_ug RGB_TOG     &rgb_ug RGB_COLOR_HSB(280,75,80)   &rgb_ug RGB_COLOR_HSB(60,100,100)      &rgb_ug RGB_COLOR_HSB(150,100,100)   &rgb_ug RGB_COLOR_HSB(180,100,100)     &none
       &to 0      &rgb_ug RGB_HUI     &rgb_ug RGB_SAI                    &rgb_ug RGB_BRI                        &rgb_ug RGB_SPI                      &rgb_ug RGB_EFF                                              &rgb_ug RGB_HUI     &rgb_ug RGB_SAI                    &rgb_ug RGB_BRI                        &rgb_ug RGB_SPI                      &rgb_ug RGB_EFF                        &none
@@ -64,8 +64,8 @@ bindings = <
 		
 		};		
 		
-		function_layer
-bindings = <
+		function_layer {
+                bindings = <
       &kp ESC      &kp F1          &kp F2         &kp F3       &kp F4         &kp F5                                                                              &kp F6        &kp F7          &kp F8         &kp F9          &kp F10        &kp F11 
       &to 2        &kp N1          &kp N2         &kp N3       &kp N4         &kp N5                                                                              &kp N6        &kp N7          &kp N8         &kp N9          &kp N0         &kp F12 
       &to 0        &bt BT_SEL 0    &bt BT_NXT     &bt BT_PRV   &bt BT_CLR     &out OUT_TOG   &none           &none                   &none          &none         &kp K_PP      &kp K_NEXT      &kp K_PREV     &kp K_VOL_UP    &kp K_VOL_DN   &kp K_MUTE  &none     &none  
