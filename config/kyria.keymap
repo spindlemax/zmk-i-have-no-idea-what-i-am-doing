@@ -39,8 +39,8 @@
 		
 bindings = <
         &kp ESC   &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)                                 &kp EQUAL  &kp N7 &kp N8  &kp N9  &kp MINUS &kp LS(N9)
-	&to 0   &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp GRAVE                                           &kp ASTRK  &kp N4 &kp N5  &kp N6  &kp SEMI  &kp LS(N0)
-	&kp LSHFT &kp HOME &kp END &kp PG_UP &kp PG_DN &kp V &kp F1 &kp F2             &kp F4  &kp F10   &kp FSLH   &kp N1 &kp N2  &kp N3  &kp COMMA   &kp DOT 
+	&to 0   &kp LEFT &kp UP &kp DOWN &kp RIGHT &rgb_ug RGB_COLOR_HSB(180,100,100)                                            &kp ASTRK  &kp N4 &kp N5  &kp N6  &kp SEMI  &kp LS(N0)
+	&kp LSHFT &kp HOME &kp END &kp PG_UP &kp PG_DN &rgb_ug RGB_COLOR_HSB(280,75,80) &kp F1 &kp F2             &kp F4  &kp F10   &kp FSLH   &kp N1 &kp N2  &kp N3  &kp COMMA   &kp DOT 
 	                 &kp LGUI &kp TAB &kp LSHFT &kp LCTRL &kp LALT                 &kp RET &kp BSPC  &kp SPACE &kp N0 &kp RET
 			>;
 			
