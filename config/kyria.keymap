@@ -26,9 +26,9 @@
 // | lower |  \  |  Z  |  X   |  C   |  V   |  F2     |   F10   |  |   HOME  |  END    |  B   |  N    |  M    |  ,   |  .    |   /  |
 //                     | GUI  | DEL  | LALT |  LCTRL  |   LSHIFT|  |   RET   |  SPACE  | BSPC | DEL   | R-CTRL|
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp EQUAL
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&to 1 &kp BSLH &kp Z &kp X &kp C &kp V &kp F2 &kp F10        &kp HOME &kp END &kp B &kp N &kp M  &kp COMMA &kp DOT &kp FSLH 
+	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp EQUAL &kp Y &kp U  &kp I     &kp O   &kp P 
+	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp SQT &kp H &kp J  &kp K     &kp L   &kp SEMI 
+	&to 1 &kp Z &kp X &kp C &kp V &kp BSLH &kp F2 &kp F10        &kp HOME &kp END &kp FLSH &kp B &kp N &kp M  &kp COMMA &kp DOT  
 	                 &kp LGUI &kp TAB &kp LSHFT &kp LCTRL &kp LALT        &kp RET  &kp BSPC  &kp SPACE &kp DEL &kp LCTRL
 			>;
 
@@ -38,9 +38,9 @@
 		lower_layer {
 		
 bindings = <
-        &kp ESC   &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)                                 &kp LS(N9)  &kp N7 &kp N8  &kp N9  &kp MINUS &kp EQUAL
-	&to 0   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp GRAVE                                           &kp LS(N0)  &kp N4 &kp N5  &kp N6  &kp SEMI  &kp ASTRK
-	&kp LSHFT &kp HOME &kp END &kp PG_UP &kp PG_DN &kp V &kp F1 &kp F2             &kp F4  &kp F10   &kp COMMA   &kp N1 &kp N2  &kp N3  &kp DOT   &kp FSLH 
+        &kp ESC   &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)                                 &kp EQUAL  &kp N7 &kp N8  &kp N9  &kp MINUS &kp LS(N9)
+	&to 0   &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp GRAVE                                           &kp ASTRK  &kp N4 &kp N5  &kp N6  &kp SEMI  &kp LS(N0)
+	&kp LSHFT &kp HOME &kp END &kp PG_UP &kp PG_DN &kp V &kp F1 &kp F2             &kp F4  &kp F10   &kp FSLH   &kp N1 &kp N2  &kp N3  &kp COMMA   &kp DOT 
 	                 &kp LGUI &kp TAB &kp LSHFT &kp LCTRL &kp LALT                 &kp RET &kp BSPC  &kp SPACE &kp N0 &kp RET
 			>;
 			
