@@ -6,7 +6,7 @@ manifest:
       url base: https://github.com/spindlemax/zmk.git
   projects:
     - name: zmk
-      remote: spindlemax
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
   self:
