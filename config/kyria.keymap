@@ -6,6 +6,10 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+&left_encoder { resolution = <1>;};
+&right_encoder { resolution = <1>;};
 
 / {
 	keymap {
@@ -13,18 +17,18 @@
 
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   EQUAL  |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+// | SHIFT |  \  |  Z  |  X   |  C   |  V   |  F2     |   F10   |  |   HOME  |  END    |  B   |  N    |  M    |  ,   |  .    |   /  |
+//                     | GUI  | DEL  | LALT |  LCTRL  |   LSHIFT|  |   RET   |  SPACE  | BSPC | DEL   | R-CTRL|
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp EQUAL
 	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	&kp LSHFT &kp BSLH &kp Z &kp X &kp C &kp V &kp F2 &kp F10        &kp HOME &kp END &kp B &kp N &kp M  &kp COMMA &kp DOT &kp FSLH 
+	                 &kp LGUI &kp DEL &kp LALT &kp LCTRL &kp LSHFT        &kp RET  &kp SPACE  &kp BSPC &kp DEL &kp LCTRL
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp LC(LEFT) LC(RIGHT)>;
 		};
 	};
 };
