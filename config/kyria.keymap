@@ -39,7 +39,7 @@
 		
 bindings = <
         &kp ESC   &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)                                 &kp LS(N9)  &kp N7 &kp N8  &kp N9  &kp MINUS &kp EQUAL
-	&to 0   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp GRAVE                                           &kp LS(N0)  &kp N4 &kp N5  &kp N6  &kp SEMI  &kp ASTR
+	&to 0   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp GRAVE                                           &kp LS(N0)  &kp N4 &kp N5  &kp N6  &kp SEMI  &kp ASTRK
 	&kp LSHFT &kp HOME &kp END &kp PG_UP &kp PG_DN &kp V &kp F1 &kp F2             &kp F4  &kp F10   &kp COMMA   &kp N1 &kp N2  &kp N3  &kp DOT   &kp FSLH 
 	                 &kp LGUI &kp TAB &kp LSHFT &kp LCTRL &kp LALT                 &kp RET &kp BSPC  &SPACE &kp N0 &kp RET
 			>;
