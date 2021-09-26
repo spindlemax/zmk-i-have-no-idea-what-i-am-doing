@@ -68,7 +68,7 @@ bindings = <
                 bindings = <
       &kp ESC      &kp F1          &kp F2         &kp F3       &kp F4         &kp F5                                                                              &kp F6        &kp F7          &kp F8         &kp F9          &kp F10        &kp F11 
       &to 2        &kp N1          &kp N2         &kp N3       &kp N4         &kp N5                                                                              &kp N6        &kp N7          &kp N8         &kp N9          &kp N0         &kp F12 
-      &to 0        &bt BT_SEL 0    &bt BT_NXT     &bt BT_PRV   &bt BT_CLR     &out OUT_TOG   &none           &none                   &none          &none         &kp K_PP      &kp K_NEXT      &kp K_PREV     &kp K_VOL_UP    &kp K_VOL_DN   &kp K_MUTE  &none     &none  
+      &to 0        &bt BT_SEL 0    &bt BT_NXT     &bt BT_PRV   &bt BT_CLR     &none   &none           &none                   &none          &none         &kp K_PP      &kp K_NEXT      &kp K_PREV     &kp K_VOL_UP    &kp K_VOL_DN   &kp K_MUTE  &none     &none  
                                                   &kp CAPS       &kp TAB      &kp LALT       &kp LCTRL       &kp LSHFT               &kp ENTER      &kp SPACE     &kp BSPC      &kp DEL         &kp LCTRL 
       
       >;
