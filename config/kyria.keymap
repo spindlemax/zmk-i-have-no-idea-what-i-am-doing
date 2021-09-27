@@ -42,7 +42,7 @@
                 bindings = <
         &kp ESC      &kp HOME    &kp END     &kp PG_UP   &kp PG_DN    &none                                                            &kp EQUAL    &kp N7   &kp N8    &kp N9    &kp MINUS   &kp LS(N9)
 	&to 0        &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT    &none                                                            &kp ASTRK    &kp N4   &kp N5    &kp N6    &kp SEMI    &kp LS(N0)
-	&kp LSHFT    &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)    &none       &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1   &kp N2    &kp N3    &kp COMMA   &kp DOT 
+	&to 0    &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)    &none       &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1   &kp N2    &kp N3    &kp COMMA   &kp DOT 
 	                                     &kp LGUI    &kp TAB      &kp LSHFT   &kp LCTRL   &kp LALT             &kp RET   &kp BSPC  &kp SPACE    &kp N0   &kp RET
 			>;
 			
@@ -68,7 +68,7 @@ bindings = <
                 bindings = <
       &kp ESC      &kp F1          &kp F2         &kp F3       &kp F4         &kp F5                                                                              &kp F6        &kp F7          &kp F8         &kp F9          &kp F10        &kp F11 
       &to 2        &kp N1          &kp N2         &kp N3       &kp N4         &kp N5                                                                              &kp N6        &kp N7          &kp N8         &kp N9          &kp N0         &kp F12 
-      &to 0        &bt BT_SEL 0    &bt BT_NXT     &bt BT_PRV   &bt BT_CLR     &none   &none           &none                   &none          &none         &kp K_PP      &kp K_NEXT      &kp K_PREV     &kp K_VOL_UP    &kp K_VOL_DN   &kp K_MUTE  &none     &none  
+      &to 0        &bt BT_SEL 0    &bt BT_NXT     &bt BT_PRV   &none     &none   &bt BT_CLR           &none                   &none          &none         &kp K_PP      &kp K_NEXT      &kp K_PREV     &kp K_VOL_UP    &kp K_VOL_DN   &kp K_MUTE  &none     &none  
                                                   &kp CAPS       &kp TAB      &kp LALT       &kp LCTRL       &kp LSHFT               &kp ENTER      &kp SPACE     &kp BSPC      &kp DEL         &kp LCTRL 
       
       >;
