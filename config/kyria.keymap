@@ -42,7 +42,7 @@
                 bindings = <
         &kp ESC      &kp HOME    &kp END     &kp PG_UP   &kp PG_DN    &none                                                            &kp EQUAL    &kp N7   &kp N8    &kp N9    &kp MINUS   &kp LS(N9)
 	&to 0        &kp LEFT    &kp DOWN      &kp UP    &kp RIGHT    &none                                                            &kp ASTRK    &kp N4   &kp N5    &kp N6    &kp SEMI    &kp LS(N0)
-	&to 0    &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)    &none       &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1   &kp N2    &kp N3    &kp COMMA   &kp DOT 
+	&to 0    &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)    &kp LC(Y)       &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1   &kp N2    &kp N3    &kp COMMA   &kp DOT 
 	                                     &kp LGUI    &kp TAB      &kp LSHFT   &kp LCTRL   &kp LALT             &kp RET   &kp BSPC  &kp SPACE    &kp N0   &kp RET
 			>;
 			
