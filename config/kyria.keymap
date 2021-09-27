@@ -34,7 +34,7 @@
 	                              &kp LGUI   &kp TAB   &kp LSHFT   &kp LCTRL   &kp LALT        &kp RET    &kp BSPC   &kp SPACE    &kp DEL  &kp LCTRL
 			>;
 
-			sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT) &inc_dec_kp PG_UP PG_DN >;
+			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN >;
 		};
 		
 		lower_layer {
@@ -46,7 +46,7 @@
 	                                     &kp LGUI    &kp TAB      &kp LSHFT   &kp LCTRL   &kp LALT             &kp RET   &kp BSPC  &kp SPACE    &kp N0   &kp RET
 			>;
 			
- sensor-bindings = <&inc_dec_kp LC(Z) LC(Y) &inc_dec_cp LA(LS(TAB)) LA(TAB) >;
+ sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_cp LA(LS(TAB)) LA(TAB) >;
 
 		
 		};
@@ -68,12 +68,12 @@ bindings = <
                 bindings = <
       &kp ESC      &kp F1          &kp F2         &kp F3       &kp F4         &kp F5                                                                              &kp F6        &kp F7          &kp F8         &kp F9          &kp F10        &kp F11 
       &to 2        &kp N1          &kp N2         &kp N3       &kp N4         &kp N5                                                                              &kp N6        &kp N7          &kp N8         &kp N9          &kp N0         &kp F12 
-      &to 0        &bt BT_SEL 0    &bt BT_NXT     &bt BT_PRV   &none     &none   &bt BT_CLR           &none                   &none          &none         &kp K_PP      &kp K_NEXT      &kp K_PREV     &kp K_VOL_UP    &kp K_VOL_DN   &kp K_MUTE  &none     &none  
-                                                  &kp CAPS       &kp TAB      &kp LALT       &kp LCTRL       &kp LSHFT               &kp ENTER      &kp SPACE     &kp BSPC      &kp DEL         &kp LCTRL 
+      &to 0        &bt BT_SEL 0    &bt BT_NXT     &bt BT_PRV   &none          &none           &bt BT_CLR              &none          &none         &none         &kp K_PP      &kp K_NEXT      &kp K_PREV     &kp K_VOL_UP    &kp K_VOL_DN   &kp K_MUTE 
+                                   &kp CAPS       &kp TAB      &kp LALT       &kp LCTRL       &kp LSHFT               &kp ENTER      &kp SPACE     &kp BSPC      &kp DEL         &kp LCTRL 
       
       >;
 			
- sensor-bindings = <&inc_dec_cp PG_UP PG_DN &inc_dec_cp LC(Z) LC(Y)>;
+ sensor-bindings = <&inc_dec_cp LC(Z) LC(Y) &inc_dec_cp LC(Z) LC(Y)>;
 
 		
 		};
