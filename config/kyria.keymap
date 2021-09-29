@@ -30,7 +30,7 @@
 //                     | GUI  | DEL  | LALT |  LCTRL  |   LSHIFT|  |   RET   |  SPACE  | BSPC | DEL   | R-CTRL|
 			bindings = <
 	&kp ESC     &kp Q    &kp W    &kp E      &kp R     &kp T                                                         &kp Y        &kp U    &kp I      &kp O     &kp EQUAL   &kp SEMI
-	&to 3     &kp A    &kp S    &kp D      &kp F     &kp G                                                           &kp SQT      &kp H    &kp J      &kp K     &kp L       &kp COMMA 
+	&to 3       &kp A    &kp S    &kp D      &kp F     &kp G                                                         &kp SQT      &kp H    &kp J      &kp K     &kp L       &kp COMMA 
 	&to 1       &kp Z    &kp X    &kp C      &kp V     &kp BSLH    &kp F1      &kp F2          &kp F4     &kp F10    &kp FSLH     &kp B    &kp N      &kp M     &kp P       &kp DOT  
 	                              &kp LGUI   &kp TAB   &kp LALT    &kp LSHFT   &kp LCTRL       &kp RET    &kp SPACE  &kp BSPC    &kp DEL  &kp CAPS
 			>;
@@ -44,7 +44,7 @@
         &kp ESC      &kp HOME    &kp END     &kp PG_UP   &kp PG_DN    &none                                                            &kp EQUAL    &kp N7   &kp N8    &kp N9    &kp MINUS   &kp LS(N9)
 	&to 0        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT    &none                                                            &kp ASTRK    &kp N4   &kp N5    &kp N6    &kp SEMI    &kp LS(N0)
 	&to 4        &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)    &kp LC(Y)   &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1   &kp N2    &kp N3    &kp COMMA   &kp DOT 
-	                                     &kp LS(F10)    &kp TAB      &kp LALT    &kp LSHFT   &kp LCTRL            &kp RET   &kp SPACE &kp BSPC     &kp N0   &kp RET
+	                                     &kp LS(F10)    &kp TAB   &kp LALT    &kp LSHFT   &kp LCTRL            &kp RET   &kp SPACE &kp BSPC     &kp N0   &kp RET
 			>;
 			
  sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_cp LA(LS(TAB)) LA(TAB) >;
@@ -54,10 +54,10 @@
 				excel_layer {
 		
                 bindings = <
-        &kp ESC      &kp LC(LS(Q))    &kp LC(LS(H))     &kp LA(EQUAL)   &kp LC(M)    &kp LA(N5)                         &kp ESC      &kp HOME    &kp END     &kp PG_UP   &kp PG_DN &none           
-	&to 1        &kp LC(A)    &kp LS(SPACE) &kp LC(SPACE)   &kp LC(MINUS)  &kp LC(LS(EQUAL)                         &none        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT    &none        
-	&to 0       &&kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)    &kp LC(Y)    &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1   &kp N2    &kp N3    &kp COMMA   &kp DOT 
-	                                     &kp LGUI    &kp LS(F10)      &mkp MCLK    &mkp LCLK   &mkp RCLK            &kp RET   &kp SPACE &kp BSPC     &kp DEL   &kp RET
+        &kp ESC      &kp LC(LS(Q))   &kp LC(LS(H))     &kp LA(EQUAL)   &kp LC(M)      &kp LA(N5)                                                        &kp ESC      &kp HOME    &kp END     &kp PG_UP   &kp PG_DN    &none           
+	&to 1        &kp LC(A)       &kp LS(SPACE)     &kp LC(SPACE)   &kp LC(MINUS)  &kp LC(LS(EQUAL)                                                  &none        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT    &none        
+	&to 0        &&kp LC(Z)      &kp LC(X)         &kp LC(C)       &kp LC(V)      &kp LC(Y)    &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1      &kp N2      &kp N3      &kp COMMA    &kp DOT 
+	                                               &kp LGUI        &kp LS(F10)    &kp F2       &kp SPACE   &kp RET              &kp RET   &kp SPACE &kp BSPC     &kp DEL     &kp RET
 			>;
 			
  sensor-bindings = <&inc_dec_kp LC(Z) LC(Y) &inc_dec_kp LEFT RIGHT >;
