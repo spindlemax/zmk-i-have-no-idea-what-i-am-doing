@@ -13,10 +13,14 @@
 #define LOWER 1 
 #define RGB 2
 #define function 3 
-#define excel 4
 
+<<<<<<< HEAD
 &left_encoder { resolution = <3>;};
 &right_encoder { resolution = <3>;};
+=======
+&left_encoder { resolution = <1>;};
+&right_encoder { resolution = <1>;};
+>>>>>>> parent of 52d1c22 (Update kyria.keymap)
 
 / {
 	keymap {
@@ -29,10 +33,17 @@
 // | lower |  \  |  Z  |  X   |  C   |  V   |  F2     |   F10   |  |   HOME  |  END    |  B   |  N    |  M    |  ,   |  .    |   /  |
 //                     | GUI  | DEL  | LALT |  LCTRL  |   LSHIFT|  |   RET   |  SPACE  | BSPC | DEL   | R-CTRL|
 			bindings = <
+<<<<<<< HEAD
 	&kp ESC     &kp Q    &kp W    &kp E      &kp R     &kp T                                                         &kp Y        &kp U    &kp I      &kp O     &kp EQUAL   &kp SEMI
 	&to 3       &kp A    &kp S    &kp D      &kp F     &kp G                                                         &kp SQT      &kp H    &kp J      &kp K     &kp L       &kp COMMA 
 	&to 1       &kp Z    &kp X    &kp C      &kp V     &kp BSLH    &kp F1      &kp F2          &kp F4     &kp F10    &kp FSLH     &kp B    &kp N      &kp M     &kp P       &kp DOT  
 	                              &kp LGUI   &kp TAB   &kp LALT    &kp LSHFT   &kp LCTRL       &kp RET    &kp SPACE  &kp BSPC    &kp DEL  &kp CAPS
+=======
+	&kp ESC     &kp Q    &kp W    &kp E      &kp R     &kp T                                                       &kp Y        &kp U    &kp I      &kp O     &kp P       &kp EQUAL
+	&to 3     &kp A    &kp S    &kp D      &kp F     &kp G                                                         &kp SQT      &kp H    &kp J      &kp K     &kp L       &kp SEMI 
+	&to 1       &kp Z    &kp X    &kp C      &kp V     &kp BSLH    &kp F2      &kp F10         &kp HOME   &kp END    &kp FSLH     &kp B    &kp N      &kp M     &kp COMMA   &kp DOT  
+	                              &kp LGUI   &kp TAB   &kp LSHFT   &kp LCTRL   &kp LALT        &kp RET    &kp BSPC   &kp SPACE    &kp DEL  &kp LCTRL
+>>>>>>> parent of 52d1c22 (Update kyria.keymap)
 			>;
 
 			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN >;
@@ -42,6 +53,7 @@
 		
                 bindings = <
         &kp ESC      &kp HOME    &kp END     &kp PG_UP   &kp PG_DN    &none                                                            &kp EQUAL    &kp N7   &kp N8    &kp N9    &kp MINUS   &kp LS(N9)
+<<<<<<< HEAD
 	&to 0        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT    &none                                                            &kp ASTRK    &kp N4   &kp N5    &kp N6    &kp SEMI    &kp LS(N0)
 	&to 4        &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)    &kp LC(Y)   &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1   &kp N2    &kp N3    &kp COMMA   &kp DOT 
 	                                     &kp LS(F10)    &kp TAB   &kp LALT    &kp LSHFT   &kp LCTRL            &kp RET   &kp SPACE &kp BSPC     &kp N0   &kp RET
@@ -61,6 +73,14 @@
 			>;
 			
  sensor-bindings = <&inc_dec_kp LC(Z) LC(Y) &inc_dec_kp LEFT RIGHT >;
+=======
+	&to 0        &kp LEFT    &kp DOWN      &kp UP    &kp RIGHT    &none                                                            &kp ASTRK    &kp N4   &kp N5    &kp N6    &kp SEMI    &kp LS(N0)
+	&to 0    &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)    &kp LC(Y)       &kp F1      &kp F2               &kp F4    &kp F10   &kp FSLH     &kp N1   &kp N2    &kp N3    &kp COMMA   &kp DOT 
+	                                     &kp LGUI    &kp TAB      &kp LSHFT   &kp LCTRL   &kp LALT             &kp RET   &kp BSPC  &kp SPACE    &kp N0   &kp RET
+			>;
+			
+ sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_cp LA(LS(TAB)) LA(TAB) >;
+>>>>>>> parent of 52d1c22 (Update kyria.keymap)
 
 		
 		};
@@ -82,8 +102,8 @@ bindings = <
                 bindings = <
       &kp ESC      &kp F1          &kp F2         &kp F3       &kp F4         &kp F5                                                                              &kp F6        &kp F7          &kp F8         &kp F9          &kp F10        &kp F11 
       &to 2        &kp N1          &kp N2         &kp N3       &kp N4         &kp N5                                                                              &kp N6        &kp N7          &kp N8         &kp N9          &kp N0         &kp F12 
-      &to 0        &bt BT_SEL 0    &bt BT_NXT     &bt BT_PRV   &none          &none          &bt BT_CLR      &none                   &none          &none         &kp K_PP      &kp K_NEXT      &kp K_PREV     &kp K_VOL_UP    &kp K_VOL_DN   &kp K_MUTE 
-                                                  &kp CAPS     &kp TAB        &kp LALT       &kp LCTRL       &kp LSHFT               &kp ENTER      &kp SPACE     &kp BSPC      &kp DEL         &kp LCTRL 
+      &to 0        &bt BT_SEL 0    &bt BT_NXT     &bt BT_PRV   &none          &none           &bt BT_CLR              &none          &none         &none         &kp K_PP      &kp K_NEXT      &kp K_PREV     &kp K_VOL_UP    &kp K_VOL_DN   &kp K_MUTE 
+                                   &kp CAPS       &kp TAB      &kp LALT       &kp LCTRL       &kp LSHFT               &kp ENTER      &kp SPACE     &kp BSPC      &kp DEL         &kp LCTRL 
       
       >;
 			
