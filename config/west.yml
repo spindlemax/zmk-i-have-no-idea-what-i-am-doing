@@ -2,8 +2,13 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+<<<<<<< HEAD
     - name: okke-formsma
       url-base: https://github.com/okke-formsma
+=======
+    - name: krikun98
+      url-base: https://github.com/krikun98/zmk.git
+>>>>>>> parent of 791ff1e (Update west.yml)
   projects:
     - name: zmk
       remote: okke-formsma
